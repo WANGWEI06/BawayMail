@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dip"
+              android:background="@color/main">
+
+    <ImageView
+        android:id="@+id/leftImageView"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/selector_color_main_add"
+        android:src="@mipmap/ic_normal_code" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/rightImageView"
+        android:scaleType="center"
+        android:layout_height="50dip"
+        android:background="@drawable/selector_color_main_add"
+        android:src="@mipmap/ic_normal_message" />
+
+    <EditText
+        android:layout_toLeftOf="@id/rightImageView"
+        android:layout_toRightOf="@id/leftImageView"
+        android:focusable="false"
+        android:hint="搜索一下"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:layout_height="34dip"
+        android:layout_marginTop="8dip"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dip"
+        android:textColorHint="@color/greySub"
+        android:drawableRight="@mipmap/ic_edit_search"
+        android:background="@drawable/bg_edit_text_search"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:id="@+id/titleEditText"
+        android:layout_marginRight="10dip"
+        />
+
+
+
+</RelativeLayout>
